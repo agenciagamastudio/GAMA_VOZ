@@ -14,8 +14,10 @@ import {
   Settings2,
   Loader2,
   CheckCircle2,
-  Mic2
+  Mic2,
+  Bot
 } from 'lucide-react';
+import LiveModePanel from './components/LiveModePanel';
 
 interface WordToken {
   word: string;
@@ -103,6 +105,10 @@ const App: React.FC = () => {
               </h1>
               <div className="flex items-center gap-2 mt-1.5">
                 <span className="text-[10px] text-[#88CE11] font-bold uppercase tracking-[0.4em] bg-[#88CE11]/10 px-2 py-0.5 rounded-full border border-[#88CE11]/20">Neural Core v2.5</span>
+                <span className="text-[10px] text-white/30 font-mono">•</span>
+                <span className="text-[10px] font-bold uppercase tracking-[0.3em] text-[#A0A0A0] flex items-center gap-1">
+                  <Bot size={12} /> Assistente Ao Vivo
+                </span>
               </div>
             </div>
           </div>
@@ -254,6 +260,9 @@ const App: React.FC = () => {
           <div className="h-[1px] flex-1 bg-white/5 hidden sm:block mx-10"></div>
           <p className="text-[10px] font-bold uppercase tracking-[0.5em] text-white/50">Gama Voice IA • Professional Edition • 2024</p>
         </footer>
+
+        {/* Painel do Assistente Ao Vivo */}
+        <LiveModePanel />
       </div>
     </div>
   );

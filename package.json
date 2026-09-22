@@ -9,14 +9,17 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "react": "^19.2.4",
-    "react-dom": "^19.2.4",
+    "@google/genai": "^1.39.0",
     "lucide-react": "0.469.0",
-    "@google/genai": "^1.39.0"
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4"
   },
   "devDependencies": {
+    "@esbuild/win32-x64": "^0.25.12",
+    "@rollup/rollup-win32-x64-msvc": "^4.63.4",
     "@types/node": "^22.14.0",
     "@vitejs/plugin-react": "^5.0.0",
+    "esbuild": "^0.25.12",
     "typescript": "~5.8.2",
     "vite": "^6.2.0"
   }
