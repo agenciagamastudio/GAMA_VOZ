@@ -1,0 +1,54 @@
+# GAMA_VOZ Backend Dependencies
+# Python 3.9+ required
+
+# Flask Framework
+flask==3.0.0
+flask-cors==4.0.0
+
+# TTS & Audio Processing
+kokoro==0.2.1
+piper-tts>=1.2.0
+scipy>=1.11.0
+librosa>=0.10.0
+soundfile>=0.12.0
+
+# Voice cloning — zero-shot via Coqui XTTS-v2
+# Model (~1.8 GB) is auto-downloaded to %APPDATA%\tts on first synthesize() call
+TTS==0.21.1
+transformers>=4.20.0,<4.33.0
+# torch: CPU variant tested at 2.4.1+cpu.  Install CPU build with:
+#   pip install "torch>=2.1,<2.5" --index-url https://download.pytorch.org/whl/cpu
+torch>=2.1,<2.5
+
+# STT & Voice APIs
+groq>=0.4.2
+
+# Data Processing
+numpy>=1.24.0
+pandas>=2.0.0
+
+# Authentication & Security
+PyJWT>=2.8.0
+python-dotenv>=1.0.0
+
+# Database
+sqlalchemy>=2.0.0
+
+# Real-time WebSocket
+flask-socketio>=5.3.0
+python-socketio>=5.8.0
+
+# HTTP & Async
+aiohttp>=3.9.0
+requests>=2.31.0
+
+# Testing
+pytest>=7.0.0
+pytest-cov>=4.1.0
+pytest-asyncio>=0.21.0
+
+# Build & Distribution (for PyInstaller .exe generation)
+pyinstaller>=6.0.0
+
+# Optional: Performance
+gunicorn>=21.0.0

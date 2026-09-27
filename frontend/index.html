@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="pt-br" class="dark">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GAMA Voz | Neural Voice Studio</title>
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 24 24' fill='none' stroke='%230A0A0A' stroke-width='1.5' stroke-linecap='square' stroke-linejoin='miter'%3E%3Cpath d='M5 8h11a2 2 0 0 1 2 2v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V10a2 2 0 0 1 2-2z'/%3E%3Cpath d='M15 10.5v3a6 6 0 0 1-6 6'/%3E%3Cpath d='M18.5 7.5v8a8 8 0 0 1-8 8'/%3E%3Cpath d='M20.5 5.5v11a10 10 0 0 1-10 10'/%3E%3C/svg%3E" />
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500&display=swap');
+        
+        :root {
+            --ge-bg: #0A0A0A;
+            --ge-surface: #141414;
+            --ge-surface-2: #1E1E1E;
+            --ge-text: #FFFFFF;
+            --ge-text-2: #A0A0A0;
+            --ge-border: #262626;
+            --ge-primary: #88CE11;
+            --ge-primary-strong: #66AF00;
+            --ge-danger: #EF4444;
+            
+            --ge-radius-sm: 8px;
+            --ge-radius-md: 12px;
+            --ge-radius-lg: 16px;
+        }
+
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: var(--ge-bg);
+            color: var(--ge-text);
+            -webkit-font-smoothing: antialiased;
+            overflow-x: hidden;
+        }
+
+        .ge-card {
+            background: var(--ge-surface);
+            border: 1px solid var(--ge-border);
+            border-radius: var(--ge-radius-lg);
+        }
+
+        .font-mono {
+            font-family: 'JetBrains Mono', monospace;
+        }
+
+        textarea::placeholder {
+            color: var(--ge-text-2);
+            opacity: 0.3;
+        }
+
+        .scrollbar-hide::-webkit-scrollbar {
+            display: none;
+        }
+        
+        .custom-scrollbar::-webkit-scrollbar { width: 4px; }
+        .custom-scrollbar::-webkit-scrollbar-track { background: transparent; }
+        .custom-scrollbar::-webkit-scrollbar-thumb { background: #262626; border-radius: 10px; }
+        .custom-scrollbar::-webkit-scrollbar-thumb:hover { background: #88CE11; }
+    </style>
+    <script type="importmap">
+    {
+      "imports": {
+        "react": "https://esm.sh/react@^19.2.4",
+        "react-dom/": "https://esm.sh/react-dom@^19.2.4/",
+        "react/": "https://esm.sh/react@^19.2.4/",
+        "lucide-react": "https://esm.sh/lucide-react@0.469.0"
+      }
+    }
+    </script>
+</head>
+<body>
+    <div id="root"></div>
+    <script type="module" src="/src/index.tsx"></script>
+</body>
+</html>
