@@ -39,7 +39,7 @@ Isso vai baixar todo o projeto (~500 MB). Pode levar alguns minutos.
 ### **PASSO 2: Navegar para a pasta GAMA_VOZ**
 
 ```bash
-cd Desktop/O_GRANDE_PROJETO/GAMA_VOZ
+cd GAMA_VOZ
 ```
 
 ---
@@ -127,7 +127,7 @@ INFO:     Application startup complete
 Abra um **novo terminal** e execute:
 
 ```bash
-cd Desktop/O_GRANDE_PROJETO/GAMA_VOZ/frontend
+cd frontend
 npm run dev
 ```
 

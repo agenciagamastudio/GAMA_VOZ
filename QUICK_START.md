@@ -5,7 +5,7 @@
 ```bash
 # 1. Clonar
 git clone https://github.com/agenciagamastudio/Gama-Voice-IA.git
-cd Gama-Voice-IA/Desktop/O_GRANDE_PROJETO/GAMA_VOZ
+cd GAMA_VOZ
 
 # 2. Instalar (escolha uma opção)
 
